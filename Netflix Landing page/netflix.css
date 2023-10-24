@@ -1,0 +1,492 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    overflow-x: hidden;
+}
+
+body {
+    background: #000;
+    color: #fff;
+}
+
+header {
+    height: 90vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url(https://assets.nflxext.com/ffe/siteui/vlv3/ab180a27-b661-44d7-a6d9-940cb32f2f4a/7fb62e44-31fd-4e1f-b6ad-0b5c8c2a20ef/IN-en-20231009-popsignuptwoweeks-perspective_alpha_website_large.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 2% 0%; /* Adjusted padding using percentage */
+    border-bottom: 0.3em solid #222;
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    justify-content: space-between;
+    /* padding: 2%; Adjusted padding using percentage */
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    margin-top: 1em;
+}
+
+.logo {
+    width: 11%; /* Adjusted width using percentage */
+    margin-left: 10em;
+}
+
+.butt{
+    margin-right: 10em;
+
+}
+
+.navbar__nav__items{
+    display: flex;
+    gap:30px;
+}
+
+.dropdown__container {
+  width: 100%;
+  height: 2.04em;
+  border-radius: 3px;
+  border:1px solid #fff; /* Changed to white */
+  color: #fff; /* Changed to white */
+
+}
+
+.language__drop__down {
+    
+    color: #fff;
+    width: 7.700000000000003em;
+  background-color: transparent;
+  border: none; /* Changed to remove border */
+  outline: none; /* Added outline property */
+}
+
+.language__drop__down option {
+    width: 100%;
+  color: #000; /* Adjusted font color */
+}
+
+select#languageSelecy {
+    
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.default-ltr-cache-4z3qvp {
+    fill: #fff; /* Changed to white */
+    margin-left: 10px;
+    margin-top: 6px;
+}
+
+.signin__button {
+  height: 2.4em; 
+  width: 100%;
+  background-color: #ff0000; /* Changed to bright red */
+  color: #fff; /* Changed to white */
+  border: none; /* Removed border */
+  padding: 0 20px; /* Adjusted padding */
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.title-heavy{
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+
+.title-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 90%; /* Adjust as needed */
+}
+
+.hero__card {
+    max-width: 1200px; /* Adjust as needed */
+    margin: auto;
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, 0); /* Adjust the background color and transparency as needed */
+    border-radius: 10px;
+}
+
+/* Additional styling for the hero card content */
+.hero__subtitle {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.hero__description {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+}
+
+.email__form__container {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    line-height: 1.5;
+    padding: 1.5rem 1rem 0.5rem;
+}
+
+.form__container {
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.email__input {
+    width: 20rem;
+    line-height: 2.5;
+    padding: 0.5rem;
+    border-radius: 3px;
+    border: 1px solid #fff;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.3);
+
+}
+
+.email__label {
+    position: absolute;
+    top: 0.2rem;
+    left: 1rem;
+    color: #fff;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.email__input:focus + .email__label,
+.email__input:valid + .email__label {
+    top: 0.5rem;
+    left: 1rem;
+    font-size: 1rem;
+    color: rgb(153, 149, 149); /* Adjust the label color as needed */
+}
+
+.primary__button {
+    margin-top: 1rem;
+    padding: 0.5rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff0000;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    height: 3.4rem;
+    width: 10rem;
+    margin-left: 1em;
+    font-size: 1.0699em;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 768px) {
+ 
+  header {
+    height: 50vh;
+    padding: 5% 0%;
+  }
+
+  .logo {
+    width: 20%;
+    margin-left: 5em;
+  }
+
+  .butt {
+    margin-right: 5em;
+  }
+
+  .title-container {
+    width: 90%;
+  }
+
+  .hero__card {
+    max-width: 100%;
+  }
+
+  .email__form__container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .email__input {
+    width: 100%;
+  }
+
+  .primary__button {
+    width: 100%;
+    margin: 1rem 0;
+  }
+}
+
+
+/* extra space to avoid confusion*/
+
+
+
+
+br{
+    color: rgb(0, 0, 0, 0.8);
+    background-color: rgb(0, 1, 0, 0.8);
+    height: 0.3em;
+    width: 100%;
+}
+
+
+
+
+
+.feature {
+    display: flex;
+    align-items: center;
+    border-bottom: 8px solid #222;
+}
+
+.feature__details {
+    flex: 1;
+    padding: 20px;
+    margin: 10em;
+}
+
+.feature__title {
+  font-weight: 600;
+  margin: 10px 0;
+  font-size: 43px;
+
+}
+
+.feature__sub__title {
+  font-weight: 400;
+  font-size: 25px;
+
+}
+
+.feature__image__container {
+    flex: 1;
+    position: relative;
+    width: 100%;
+    position: relative;
+    max-width: 500px;
+    margin-right: 10em;
+}
+
+.feature__image {
+    width: 100%;
+    height: auto;
+}
+
+.feature__background__video__container {
+    position: absolute;
+    width: 100%;
+    top: 20%;
+    left: 13%;
+    height: 100%;
+    max-width: 73%;
+    max-height: 54%;
+    overflow: hidden;
+
+}
+
+.feature__background__video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+
+
+
+
+
+.feature__2__poster__container {
+  position: absolute;
+  bottom: 8%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%;
+  max-width: 26em;
+  display: flex;
+  align-items: center;
+  background-color: black;
+  overflow: hidden;
+  margin-top: 10em;
+  border: 2px solid rgba(255, 255, 255, 0.25);
+  border-radius: 10px;
+      height: 100px;
+      padding: 1rem;
+      gap: 15px;
+
+}
+
+.poster__container {
+  width: 30%;
+  overflow-y: hidden;
+  overflow: hidden;
+
+}
+
+.poster {
+  width: 100%;
+  height: 90%;
+}
+.poster__details {
+  width: 60%;
+}
+.poster__details > h4 {
+  font-size: 13px;
+  font-weight: 500;
+}
+.poster__details > h6 {
+  font-size: 12px;
+  font-weight: 400;
+  color: rgb(63, 63, 246);
+}
+
+.download__gif__container {
+  width: 20%;
+  height: 100%;
+  overflow: hidden;
+}
+.gif {
+    margin-top: 0.3em;
+    width: 100%;
+    height: 80%;
+
+}
+
+.feature__details{
+    width: 100%;
+}
+
+
+
+
+
+
+.feature__3__backgroud__video__container {
+  
+  position: absolute;
+    width: 100%;
+    top: 20%;
+    left: 13%;
+    height: 100%;
+    max-width: 73%;
+    max-height: 54%;
+    overflow: hidden;
+}
+
+.feature__3__backgroud__video__container {
+  position: absolute;
+  top: 15%;
+  left: 10%;
+  width: 80%;
+  height: 70%;
+  overflow: hidden;
+}
+
+.feature__3__backgroud__video {
+  width: 100%;
+  
+}
+
+.FAQ__accordian {
+    width: 100%;
+  }
+.FAQ__title {
+    width: 100%; /* Adjust the width as per your requirement */
+    margin: auto; /* Center the question tiles */
+    display: flex;
+    justify-content: space-between;
+    padding: 0.7em 20px;
+    font-size: x-large;
+    background-color: #303030;
+    border: 1px solid #303030;
+    color: white;
+}
+
+  
+  .FAQ__visible {
+    background-color: #303030;
+    border-top: 1px solid black;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+  }
+  
+  .FAQ__visible > p {
+    margin: 1rem;
+    font-size: x-large;
+  }
+  .FAQ__list__container {
+    border-top: 8px solid #222;
+    padding: 2rem 0;
+    border-bottom: 8px solid #222;
+  }
+  .FAQ__heading {
+    font-size: xxx-large;
+    text-align: center;
+    font-weight: bolder;
+    margin: 1rem 3rem;
+  }
+  
+  .FAQ__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding:1rem 8rem;
+  }
+
+center {
+    margin-top: 2em;
+    margin-bottom: -3em;
+}
+
+table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td, a {
+            border: none;
+            padding: 10px;
+            text-align: left;
+            font-size: 0.9rem;
+            color: rgba(255,255,255,0.7);
+            
+
+        }
+
+.footer_table{
+    padding: 2em 10em;
+    overflow: hidden;
+}
+
+
+.initial_link {
+    color: rgba(255,255,255,0.7);
+    font-size: 0.9rem;
+    margin-bottom: -1em;
+    margin-left: 0.802em;
+    overflow: hidden;
+    margin-top: 1em;
+    
+}
+
+.initial_link a{
+    color: rgba(255,255,255,0.7);
+
+}
